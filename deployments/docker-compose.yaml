@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: cringeinc
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin21
+    volumes:
+      - ./init/init.sql:/data/application/init.sql
+    ports:
+      - "0.0.0.0:5431:5432"

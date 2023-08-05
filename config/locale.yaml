@@ -1,0 +1,9 @@
+http-server:
+  host: "localhost:8080"
+  timeout: 5s
+  idle_timeout: 5s
+database:
+  host: "127.0.0.1:5431"
+  user: postgres
+  password: admin21
+  name: cringeinc
